@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.0.0-beta.2)
+  - SWTableViewCell (0.3.7)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift3`)
+  - SWTableViewCell (~> 0.3.7)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: swift3
+    :git: https://github.com/Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: a78137ab4559f37219d6b2825552eea5462e4272
+    :git: https://github.com/Alamofire/Alamofire.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7f837be535fe424db2b87d9117f13836939719ca
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+
+PODFILE CHECKSUM: df7240d75e5504a6da995177bbc10be49f384a06
+
+COCOAPODS: 1.0.1
