@@ -47,7 +47,7 @@ class CurrentWeather {
     
     var currentTemp: Double {
         if _currentTemp == nil {
-            _currentTemp = 0.011111
+            _currentTemp = 0.012345
         }
         return _currentTemp
     }

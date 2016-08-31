@@ -34,12 +34,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startMonitoringSignificantLocationChanges()
+        locationManager.startUpdatingLocation()
 
         tableView.dataSource = self
         tableView.delegate = self
 
-      
         
         
     }
@@ -56,12 +55,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            
+            print("HHHHHH" + "\(currentLocation.coordinate.latitude)" + "\(currentLocation.coordinate.longitude)")
             currentWeather.downloadWeatherDetails {
                 self.downloadForecastData {
                     self.updateMainUI()
                 }
             }
-        
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
@@ -116,7 +116,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     
     func updateMainUI() {
-        
         dateLabel.text = currentWeather.date
         currentTempLabel.text = "\(currentWeather.currentTemp)"
         //currentTempLabel.text = "kdbsafasdj"
@@ -124,7 +123,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         //currentWeatherTypeLabel.text = "fkjdasjk"
         locationLabel.text = currentWeather.cityName
         currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
-        
     }
     
     

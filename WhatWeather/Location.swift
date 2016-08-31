@@ -5,8 +5,6 @@
 //  Created by IMAC on 31/8/16.
 //  Copyright © 2016 Andrew Ng. All rights reserved.
 //
-
-import Foundation
 import CoreLocation
 
 class Location {
@@ -15,5 +13,4 @@ class Location {
     
     var latitude: Double!
     var longitude: Double!
-    
 }

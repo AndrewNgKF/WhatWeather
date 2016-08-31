@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EFF3BEE94CD4B244CAB2A5F /* Pods_WhatWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FBB6DA1F143F937934C6C0 /* Pods_WhatWeather.framework */; };
 		6F40B7481D76F1920023571B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F40B7471D76F1920023571B /* Location.swift */; };
+		6F40B74A1D770E020023571B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F40B7491D770E020023571B /* CoreLocation.framework */; };
 		6F63F7E71D76D809006A380A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63F7E61D76D809006A380A /* Forecast.swift */; };
 		6F63F7E91D76E474006A380A /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63F7E81D76E474006A380A /* WeatherCell.swift */; };
 		6FED52FA1D7692A700E331CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED52F91D7692A700E331CC /* Constants.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		39FBB6DA1F143F937934C6C0 /* Pods_WhatWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F40B7471D76F1920023571B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6F40B7491D770E020023571B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6F63F7E61D76D809006A380A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		6F63F7E81D76E474006A380A /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		6FED52F91D7692A700E331CC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F40B74A1D770E020023571B /* CoreLocation.framework in Frameworks */,
 				0EFF3BEE94CD4B244CAB2A5F /* Pods_WhatWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +101,7 @@
 		E496E10577C90D8A7BB4816C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F40B7491D770E020023571B /* CoreLocation.framework */,
 				39FBB6DA1F143F937934C6C0 /* Pods_WhatWeather.framework */,
 			);
 			name = Frameworks;
@@ -278,6 +282,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -327,6 +332,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -355,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B56B645BBC12CFB4E58A801D /* Pods-WhatWeather.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7FUMWZ2NUV;
 				INFOPLIST_FILE = WhatWeather/Info.plist;
@@ -370,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADDD9FF7B0D1AF4BC1CEEB59 /* Pods-WhatWeather.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7FUMWZ2NUV;
 				INFOPLIST_FILE = WhatWeather/Info.plist;
